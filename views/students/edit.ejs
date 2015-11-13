@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="center-align cyan-text text-lighten-2">Edit Student</h1>
+  <form method="post" action="/students/<%= student.id %>">
+    <input type="hidden" name="_method" value="patch">
+    <input type="text" name="student[firstName]" placeholder="Edit first name" value="<%= student.firstName %>">
+    <input type="text" name="student[lastName]" placeholder="Edit last name" value="<%= student.firstName %>">
+    <input type="text" name="student[age]" placeholder="Edit age" value="<%= student.firstName %>">
+    <input type="text" name="student[year]" placeholder="Edit school year" value="<%= student.firstName %>">
+    <input type="text" name="student[quote]" placeholder="Edit quote" value="<%= student.firstName %>">
+    <input type="text" name="student[info]" placeholder="Edit info" value="<%= student.firstName %>">
+    <input type="text" name="student[photo]" placeholder="Edit photo" value="<%= student.firstName %>">
+    <button class="btn #4dd0e1 cyan lighten-2">Update</button>
+    <a href="/students/<%= student.id %>"class="btn #4dd0e1 cyan lighten-2">Back</a>
+  </form>
+</div>
