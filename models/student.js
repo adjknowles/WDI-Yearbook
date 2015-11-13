@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 
 var studentSchema = mongoose.Schema({
-  name: String,
+  firstName: String,
+  lastName: String,
   age: String,
   year: String,
   quote: String,
