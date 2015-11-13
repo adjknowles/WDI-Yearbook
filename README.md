@@ -1,3 +1,1 @@
 # WDI-Yearbook
-
-test
