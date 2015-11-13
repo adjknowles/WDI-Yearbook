@@ -1,5 +1,5 @@
 <div class="container">
-  <h1><%= student.firstName %> <%= student.lastName %></h1>
+  <h1 class="grey-text text-darken-3"><%= student.firstName %> <%= student.lastName %></h1>
   <ul>
     <img class="responsive-img" src="../<%= student.photo %>" width="250" height="auto">
     <li>Age: <%= student.age %></li>
@@ -7,11 +7,11 @@
     <li>Quote: <%= student.quote %></li>
     <li>Info: <%= student.info %></li>
   </ul>
-  <a href="/students"class="btn">Back</a>
-  <a href="/students/<%= student.id %>/edit"class="btn">Edit</a>
+  <a href="/students"class="btn #424242 grey darken-3">Back</a>
+  <a href="/students/<%= student.id %>/edit"class="btn #424242 grey darken-3">Edit</a>
   <form method="post" action="/students/<%= student.id %>">
     <input type="hidden" name="_method" value="delete">
-    <button class="btn">Delete</button>
+    <button class="btn #424242 grey darken-3">Delete</button>
   </form>
 </div>
 
